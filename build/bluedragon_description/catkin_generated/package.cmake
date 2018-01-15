@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "bluedragon_description")
+set(bluedragon_description_MAINTAINER "tim <tbake015@odu.edu>")
+set(bluedragon_description_DEPRECATED "")
+set(bluedragon_description_VERSION "0.0.0")
+set(bluedragon_description_BUILD_DEPENDS "roscpp" "rospy" "urdf" "tf" "sensor_msgs" "std_msgs")
+set(bluedragon_description_RUN_DEPENDS "roscpp" "rospy" "urdf" "tf" "sensor_msgs" "std_msgs")
+set(bluedragon_description_BUILDTOOL_DEPENDS "catkin")

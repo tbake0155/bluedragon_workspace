@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "geodesy")
+set(geodesy_MAINTAINER "Jack O'Quin <jack.oquin@gmail.com>")
+set(geodesy_DEPRECATED "")
+set(geodesy_VERSION "0.4.0")
+set(geodesy_BUILD_DEPENDS "angles" "geographic_msgs" "geometry_msgs" "sensor_msgs" "tf" "unique_id" "uuid_msgs" "python-catkin-pkg")
+set(geodesy_RUN_DEPENDS "geographic_msgs" "geometry_msgs" "python-pyproj" "tf" "sensor_msgs" "unique_id" "uuid_msgs")
+set(geodesy_BUILDTOOL_DEPENDS "catkin")

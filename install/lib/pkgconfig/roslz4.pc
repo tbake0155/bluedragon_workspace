@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: roslz4
+Description: Description of roslz4
+Version: 1.12.6
+Cflags: -I/home/tim/catkin_ws/install/include
+Libs: -L/home/tim/catkin_ws/install/lib -lroslz4 -l:/usr/lib/x86_64-linux-gnu/liblz4.so
+Requires: 

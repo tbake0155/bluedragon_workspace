@@ -1,0 +1,8 @@
+set(_CATKIN_CURRENT_PACKAGE "rqt_logger_level")
+set(rqt_logger_level_VERSION "0.4.3")
+set(rqt_logger_level_MAINTAINER "Aaron Blasdel <ablasdel@gmail.com>")
+set(rqt_logger_level_BUILD_DEPENDS )
+set(rqt_logger_level_DEPRECATED "")
+set(rqt_logger_level_RUN_DEPENDS "python_qt_binding" "python-rospkg" "rosnode" "rosservice" "rospy" "rqt_gui" "rqt_gui_py")
+set(rqt_logger_level_RUN_DEPENDS_python_qt_binding_VERSION_GTE "0.2.19")
+set(rqt_logger_level_BUILDTOOL_DEPENDS "catkin")

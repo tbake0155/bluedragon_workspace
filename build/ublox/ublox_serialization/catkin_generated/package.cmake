@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ublox_serialization")
+set(ublox_serialization_MAINTAINER "Johannes Meyer <nothing@nobody.com>")
+set(ublox_serialization_DEPRECATED "")
+set(ublox_serialization_VERSION "0.0.0")
+set(ublox_serialization_BUILD_DEPENDS "roscpp" "roscpp_serialization")
+set(ublox_serialization_RUN_DEPENDS "roscpp" "roscpp_serialization")
+set(ublox_serialization_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ublox_gps")
+set(ublox_gps_MAINTAINER "Gareth Cross <gcross.code@icloud.com>, Chao Qu <quchao@seas.upenn.edu>")
+set(ublox_gps_DEPRECATED "")
+set(ublox_gps_VERSION "0.0.5")
+set(ublox_gps_BUILD_DEPENDS "ublox_serialization" "ublox_msgs" "roscpp" "roscpp_serialization" "diagnostic_updater")
+set(ublox_gps_RUN_DEPENDS "ublox_serialization" "ublox_msgs" "roscpp" "roscpp_serialization" "diagnostic_updater")
+set(ublox_gps_BUILDTOOL_DEPENDS "catkin")

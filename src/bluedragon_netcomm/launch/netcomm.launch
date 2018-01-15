@@ -1,0 +1,4 @@
+  
+   <launch>
+     <node name="netcomm" pkg="bluedragon_netcomm" type="netcomm" />
+   </launch>

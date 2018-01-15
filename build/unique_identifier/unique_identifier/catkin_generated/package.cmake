@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "unique_identifier")
+set(unique_identifier_MAINTAINER "Jack O'Quin <jack.oquin@gmail.com>")
+set(unique_identifier_DEPRECATED "")
+set(unique_identifier_VERSION "1.0.5")
+set(unique_identifier_BUILD_DEPENDS )
+set(unique_identifier_RUN_DEPENDS "unique_id" "uuid_msgs")
+set(unique_identifier_BUILDTOOL_DEPENDS "catkin")

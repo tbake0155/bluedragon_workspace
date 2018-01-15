@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "collada_parser")
+set(collada_parser_MAINTAINER "Ioan Sucan <isucan@gmail.com>, Jackie Kay <jacquelinekay1@gmail.com>")
+set(collada_parser_DEPRECATED "")
+set(collada_parser_VERSION "1.12.5")
+set(collada_parser_BUILD_DEPENDS "collada-dom" "liburdfdom-headers-dev" "roscpp" "urdf_parser_plugin" "class_loader")
+set(collada_parser_RUN_DEPENDS "collada-dom" "liburdfdom-headers-dev" "roscpp" "urdf_parser_plugin" "class_loader")
+set(collada_parser_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rqt_image_view")
+set(rqt_image_view_MAINTAINER "Aaron Blasdel <ablasdel@gmail.com>")
+set(rqt_image_view_DEPRECATED "")
+set(rqt_image_view_VERSION "0.4.3")
+set(rqt_image_view_BUILD_DEPENDS "cv_bridge" "geometry_msgs" "image_transport" "rqt_gui" "rqt_gui_cpp" "sensor_msgs")
+set(rqt_image_view_RUN_DEPENDS "cv_bridge" "geometry_msgs" "image_transport" "rqt_gui" "rqt_gui_cpp" "sensor_msgs")
+set(rqt_image_view_BUILDTOOL_DEPENDS "catkin")

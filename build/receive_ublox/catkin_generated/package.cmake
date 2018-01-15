@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "receive_ublox")
+set(receive_ublox_MAINTAINER "Ji Zhang <zhangji@cmu.edu>")
+set(receive_ublox_DEPRECATED "")
+set(receive_ublox_VERSION "0.0.1")
+set(receive_ublox_BUILD_DEPENDS "roscpp" "std_msgs" "sensor_msgs")
+set(receive_ublox_RUN_DEPENDS "roscpp" "std_msgs" "sensor_msgs")
+set(receive_ublox_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: rqt_image_view
+Description: Description of rqt_image_view
+Version: 0.4.3
+Cflags: -I/home/tim/catkin_ws/install/include
+Libs: -L/home/tim/catkin_ws/install/lib -lrqt_image_view
+Requires: rqt_gui rqt_gui_cpp image_transport sensor_msgs cv_bridge geometry_msgs

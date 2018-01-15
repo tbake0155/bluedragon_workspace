@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: rqt_launch
+Description: Description of rqt_launch
+Version: 0.4.3
+Cflags: 
+Libs: -L/home/tim/catkin_ws/install/lib 
+Requires: 

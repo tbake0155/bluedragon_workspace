@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: roscpp
+Description: Description of roscpp
+Version: 1.12.6
+Cflags: -I/home/tim/catkin_ws/install/include
+Libs: -L/home/tim/catkin_ws/install/lib -lroscpp -lpthread -l:/usr/lib/x86_64-linux-gnu/libboost_signals.so -l:/usr/lib/x86_64-linux-gnu/libboost_filesystem.so -l:/usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: cpp_common message_runtime rosconsole roscpp_serialization roscpp_traits rosgraph_msgs rostime std_msgs xmlrpcpp

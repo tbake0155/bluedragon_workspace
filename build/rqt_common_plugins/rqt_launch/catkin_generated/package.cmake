@@ -1,0 +1,8 @@
+set(_CATKIN_CURRENT_PACKAGE "rqt_launch")
+set(rqt_launch_VERSION "0.4.3")
+set(rqt_launch_MAINTAINER "Isaac Saito <130s@lateeye.net>")
+set(rqt_launch_BUILD_DEPENDS "rqt_py_common")
+set(rqt_launch_DEPRECATED "")
+set(rqt_launch_RUN_DEPENDS "python_qt_binding" "roslaunch" "rospy" "rqt_console" "rqt_gui" "rqt_gui_py" "rqt_py_common")
+set(rqt_launch_RUN_DEPENDS_python_qt_binding_VERSION_GTE "0.2.19")
+set(rqt_launch_BUILDTOOL_DEPENDS "catkin")

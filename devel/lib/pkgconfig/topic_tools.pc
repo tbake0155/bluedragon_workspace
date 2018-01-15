@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: topic_tools
+Description: Description of topic_tools
+Version: 1.12.6
+Cflags: -I/home/tim/catkin_ws/devel/include -I/home/tim/catkin_ws/src/ros_comm/tools/topic_tools/include
+Libs: -L/home/tim/catkin_ws/devel/lib -ltopic_tools
+Requires: message_runtime rosconsole roscpp std_msgs xmlrpcpp

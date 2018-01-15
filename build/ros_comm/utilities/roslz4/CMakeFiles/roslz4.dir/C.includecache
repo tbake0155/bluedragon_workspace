@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tim/catkin_ws/src/ros_comm/utilities/roslz4/include/roslz4/lz4s.h
+lz4.h
+-
+
+/home/tim/catkin_ws/src/ros_comm/utilities/roslz4/src/lz4s.c
+roslz4/lz4s.h
+/home/tim/catkin_ws/src/ros_comm/utilities/roslz4/src/roslz4/lz4s.h
+xxhash.h
+/home/tim/catkin_ws/src/ros_comm/utilities/roslz4/src/xxhash.h
+stdint.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/home/tim/catkin_ws/src/ros_comm/utilities/roslz4/src/xxhash.c
+xxhash.h
+/home/tim/catkin_ws/src/ros_comm/utilities/roslz4/src/xxhash.h
+stdlib.h
+-
+string.h
+-
+stdint.h
+-
+
+/home/tim/catkin_ws/src/ros_comm/utilities/roslz4/src/xxhash.h
+

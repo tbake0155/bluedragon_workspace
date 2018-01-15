@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: unique_id
+Description: Description of unique_id
+Version: 1.0.5
+Cflags: -I/home/tim/catkin_ws/src/unique_identifier/unique_id/include
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: uuid_msgs

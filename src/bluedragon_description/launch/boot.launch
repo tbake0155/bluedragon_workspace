@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<launch>
+     <!-- Don't use gui -->
+	<arg name="gui" default="False" />
+	<param name="use_gui" value="$(arg gui)"/>
+
+     <!-- Load bluedragon urdf file as robot_description -->
+	<param name="robot_description" textfile="/home/monarch/catkin_ws/src/bluedragon_description/urdf/bluedragon.urdf" />
+	
+     <!-- Create Hokuyo Laser Node -->
+     <!-- Listens to: raw Lidar input -->
+     <!-- Publishes : /scan -->
+     <node name="hokuyo_node" pkg="urg_node" type="urg_node" respawn="false" output="screen">
+      <param name="calibrate_time" type="bool" value="true"/> 
+      <param name="port" type="string" value="/dev/sensorLIDAR"/> 
+      <param name="intensity" type="bool" value="false"/>
+      <param name="min_ang" value="-2.356194437"/>   
+      <param name="max_ang" value="2.35619443"/>    
+      <param name="cluster" value="1"/>
+     </node>
+	
+
+     <!-- Create Razor IMU Node -->
+     <!-- Listens to: raw IMU input -->
+     <!-- Publishes : /imu_data -->
+     <node pkg="razor_imu_9dof" type="imu_node.py" name="imu_node" output="screen">
+      <rosparam file="$(find razor_imu_9dof)/config/my_razor.yaml" command="load"/>
+     </node>
+
+     <!-- Create Propulsion node -->
+     <!-- Listens to: odom_combined  near_objects-->
+     <!-- Publishes : propulsion -->
+     <node name="propulsion" pkg="bluedragon_propulsion" type="propulsion" />
+
+     <!-- Create Near objects node -->
+     <!-- Listens to: odom_combined  scan range -->
+     <!-- Publishes : near_objects -->
+     <node name="near_objects" pkg="bluedragon_propulsion" type="near_objects" />
+
+
+     <!-- Create ZED node -->
+     <!-- Listens to: raw StereoCamera input-->
+     <!-- Publishes : /vo -->
+	<!--
+     <group ns="zed">
+      <include file="$(find zed_wrapper)/launch/zed_camera.launch">
+        <arg name="svo_file" value="" />
+	   <arg name="quality" value="1" />
+        <arg name="zed_id" value="0" />
+	   <arg name="sensing_mode" value="standard" />
+	   <arg name="gpu_id" value="-1" />
+	   <arg name="frame_rate" value="30" />
+	   <arg name="resolution" value="2" />
+      </include>
+     </group>
+	<-->
+
+     <!-- Create UltraSound nodes -->
+     <!-- Listens to: raw UltraSound input -->
+     <!-- Publishes : /ultrasound1 /ultrasound2 -->
+	<node pkg="rosserial_python" type="ultrasound_serial_node.py" name="ultrasound_node" output="screen" />
+
+     <!-- Create GPS node using ublox package -->
+     <!-- Listens to: raw GPS input -->
+     <!-- Publishes : /gps/fix -->
+    <arg name="device" default="/dev/sensorGPS"/>
+    <arg name="gps" default="gps"/>
+    <arg name="frame_id" default="$(arg gps)"/>
+    <arg name="baudrate" default="38400"/>
+    <arg name="output" default="screen"/>
+
+    <!-- Read at 4Hz -->
+    <arg name="rate" default="10"/>
+
+    <!-- SBAS enabled -->
+    <arg name="enable_sbas" default="true"/>
+
+    <!-- See Ublox docs -->
+    <arg name="dynamic_model" default="portable"/>
+
+    <!-- 2D and 3D fixes enabled -->
+    <arg name="fix_mode" default="both"/>
+
+    <!-- No dead reckoning after signal loss -->
+    <arg name="dr_limit" default="0"/>
+
+    <!-- Manage use of GLONASS and BeiDou -->
+    <arg name="enable_beidou" default="false"/>
+    <arg name="enable_glonass" default="false"/>
+
+    <!-- Manage use of PPP -->
+    <arg name="enable_ppp" default="false"/>
+
+    <!-- Specify ublox version (6,7,8) -->
+    <arg name="ublox_version" default="6"/>
+
+    <node name="$(arg gps)" pkg="ublox_gps" type="ublox_gps" output="$(arg output)">
+        <param name="device" type="string" value="$(arg device)"/>
+        <param name="frame_id" type="string" value="$(arg frame_id)"/>
+        <param name="baudrate" type="int" value="$(arg baudrate)"/>
+        <param name="rate" type="int" value="$(arg rate)"/>
+        <param name="enable_sbas" type="bool" value="$(arg enable_sbas)"/>
+        <param name="dynamic_model" type="string" value="$(arg dynamic_model)"/>
+        <param name="fix_mode" type="string" value="$(arg fix_mode)"/>
+        <param name="dr_limit" type="int" value="$(arg dr_limit)"/>
+        <param name="enable_beidou" type="bool" value="$(arg enable_beidou)"/>
+        <param name="enable_glonass" type="bool" value="$(arg enable_glonass)"/>
+        <param name="enable_ppp" type="bool" value="$(arg enable_ppp)"/>
+        <param name="ublox_version" type="int" value="$(arg ublox_version)"/>
+    </node>
+
+     <!-- Convert GPS satellite fix into (x,y) odometry for use by robot pose ekf -->
+     <!-- Listens to: /gps/fix -->
+     <!-- Publishes : /odom -->
+     <node name="gps_conv" pkg="gps_common" type="utm_odometry_node">
+      <remap from="fix" to="/gps/fix"/>
+      <param name="rot_covariance" value="99999" />
+      <param name="frame_id" value="base_footprint" />
+     </node>
+ 
+     <!-- Start robot pose ekf odometry sensor fusion -->
+     <!-- Listens to: /odom /vo /imu_data -->
+     <!-- Publishes : /odom_combined -->
+     <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf" output="screen">
+      <param name="output_frame" value="odom_combined"/>
+      <param name="freq" value="30.0"/>
+      <param name="debug" value="true"/>
+      <param name="sensor_timeout" value="1.0"/>  
+      <param name="odom_used" value="true"/>
+      <param name="imu_used" value="true"/>
+      <param name="vo_used" value="true"/>
+      <remap from="vo" to="/stereo_odometer/odometry"/>
+      <param name="gps_used" value="false"/>
+     </node>   
+
+    <!-- Establish transformation tree for all nodes except base_footprint_to_odom_combined -->
+	<node pkg="tf" type="static_transform_publisher" name="laser_to_base_footprint" args="0.5 0.001 0.0995 0.0 0.0 0.0 /base_footprint /laser_link 100"/>
+	<node pkg="tf" type="static_transform_publisher" name="zed_to_base_footprint" args="0.0 0.00 0.00 0.0 0.0 0.0 /base_footprint /zed_link 100"/>
+	<node pkg="tf" type="static_transform_publisher" name="ultrasound1_to_base_footprint" args="0.3 0.05 0.1415 1.5707 0.0 0.0 /base_footprint /ultrasound1_link 100" />
+	<node pkg="tf" type="static_transform_publisher" name="ultrasound2_to_base_footprint" args="0.3 -0.05 0.1415 -1.5707 0.0 0.0 /base_footprint /ultrasound2_link 100" />
+     <node pkg="tf" type="static_transform_publisher" name="odom_combined_to_map" args="0.3 -0.05 0.1415 -1.5707 0.0 0.0 /map /odom_combined 100" />
+     <node pkg="tf" type="static_transform_publisher" name="imu_to_base_footprint" args="0.0 0.00 0.00 0.0 0.0 0.0 /base_footprint /imu_data 100" />
+
+     <!-- Create NETCOMM node -->
+     <!-- Listens to: scan odom_combined range map propulsion near_objects -->
+     <!-- Publishes : /netcomm or to udp network sockets -->
+     <node name="netcomm" pkg="bluedragon_netcomm" type="netcomm" />
+
+     <!-- Create record of all inputs using rosbag -->
+	<!-- Saves a bag file to /home/monarch/bluedragon_description for playback -->
+	<node pkg="rosbag" type="record" name="bluedragon_bag" args=" -o $(find bluedragon_description)/bags/bluedragon_bag.bag /odom_combined /scan /tf /odom /vo /imu_data /gps/fix /diagnostics" />
+
+  
+</launch>

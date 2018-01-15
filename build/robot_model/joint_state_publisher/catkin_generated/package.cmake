@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "joint_state_publisher")
+set(joint_state_publisher_MAINTAINER "David V. Lu!! <davidvlu@gmail.com>, Jackie Kay <jacquelinekay1@gmail.com>")
+set(joint_state_publisher_DEPRECATED "")
+set(joint_state_publisher_VERSION "1.12.5")
+set(joint_state_publisher_BUILD_DEPENDS "rospy" "python_qt_binding" "sensor_msgs")
+set(joint_state_publisher_RUN_DEPENDS "rospy" "python_qt_binding" "sensor_msgs")
+set(joint_state_publisher_BUILDTOOL_DEPENDS "catkin")

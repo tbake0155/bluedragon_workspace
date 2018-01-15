@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "geographic_info")
+set(geographic_info_MAINTAINER "Jack O'Quin <jack.oquin@gmail.com>")
+set(geographic_info_DEPRECATED "")
+set(geographic_info_VERSION "0.4.0")
+set(geographic_info_BUILD_DEPENDS )
+set(geographic_info_RUN_DEPENDS "geodesy" "geographic_msgs")
+set(geographic_info_BUILDTOOL_DEPENDS "catkin")

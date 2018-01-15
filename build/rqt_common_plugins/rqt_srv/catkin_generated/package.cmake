@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rqt_srv")
+set(rqt_srv_MAINTAINER "Aaron Blasdel <ablasdel@gmail.com>")
+set(rqt_srv_DEPRECATED "")
+set(rqt_srv_VERSION "0.4.3")
+set(rqt_srv_BUILD_DEPENDS )
+set(rqt_srv_RUN_DEPENDS "rosmsg" "rospy" "rqt_gui" "rqt_gui_py" "rqt_msg")
+set(rqt_srv_BUILDTOOL_DEPENDS "catkin")

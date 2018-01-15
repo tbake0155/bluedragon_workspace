@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: collada_parser
+Description: Description of collada_parser
+Version: 1.12.5
+Cflags: -I/home/tim/catkin_ws/install/include
+Libs: -L/home/tim/catkin_ws/install/lib -lcollada_parser
+Requires: roscpp urdf_parser_plugin

@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: test_rostopic
+Description: Description of test_rostopic
+Version: 1.12.6
+Cflags: -I/home/tim/catkin_ws/install/include
+Libs: -L/home/tim/catkin_ws/install/lib 
+Requires: 

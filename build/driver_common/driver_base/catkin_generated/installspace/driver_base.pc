@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: driver_base
+Description: Description of driver_base
+Version: 1.6.8
+Cflags: -I/home/tim/catkin_ws/install/include
+Libs: -L/home/tim/catkin_ws/install/lib 
+Requires: message_runtime std_msgs

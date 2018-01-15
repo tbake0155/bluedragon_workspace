@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "bluedragon_netcomm")
+set(bluedragon_netcomm_MAINTAINER "tim <tbake015@gmail.com>")
+set(bluedragon_netcomm_DEPRECATED "")
+set(bluedragon_netcomm_VERSION "1.0.0")
+set(bluedragon_netcomm_BUILD_DEPENDS "message_generation" "roscpp" "nav_msgs" "tf" "rospy" "std_msgs")
+set(bluedragon_netcomm_RUN_DEPENDS "roscpp" "tf" "nav_msgs" "rospy" "std_msgs" "message_runtime" "message_generation")
+set(bluedragon_netcomm_BUILDTOOL_DEPENDS "catkin")

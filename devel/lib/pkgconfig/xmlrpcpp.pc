@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: xmlrpcpp
+Description: Description of xmlrpcpp
+Version: 1.12.6
+Cflags: -I/home/tim/catkin_ws/src/ros_comm/utilities/xmlrpcpp/include
+Libs: -L/home/tim/catkin_ws/devel/lib -lxmlrpcpp
+Requires: cpp_common

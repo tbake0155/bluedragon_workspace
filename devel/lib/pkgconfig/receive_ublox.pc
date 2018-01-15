@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: receive_ublox
+Description: Description of receive_ublox
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: roscpp std_msgs sensor_msgs

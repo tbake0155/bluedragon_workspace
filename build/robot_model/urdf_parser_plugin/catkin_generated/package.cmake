@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "urdf_parser_plugin")
+set(urdf_parser_plugin_MAINTAINER "Ioan Sucan <isucan@gmail.com>, Jackie Kay <jacquelinekay1@gmail.com>")
+set(urdf_parser_plugin_DEPRECATED "")
+set(urdf_parser_plugin_VERSION "1.12.5")
+set(urdf_parser_plugin_BUILD_DEPENDS "liburdfdom-headers-dev")
+set(urdf_parser_plugin_RUN_DEPENDS "liburdfdom-headers-dev")
+set(urdf_parser_plugin_BUILDTOOL_DEPENDS "catkin")

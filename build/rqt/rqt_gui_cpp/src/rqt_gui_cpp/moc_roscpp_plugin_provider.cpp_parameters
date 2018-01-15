@@ -1,0 +1,14 @@
+-I/home/tim/catkin_ws/src/rqt/rqt_gui_cpp/include
+-I/home/tim/catkin_ws/devel/include
+-I/home/tim/catkin_ws/devel/include/ros
+-I/home/tim/catkin_ws/src/ros_comm/tools/rosconsole/include
+-I/home/tim/catkin_ws/src/ros_comm/clients/roscpp/include
+-I/home/tim/catkin_ws/src/ros_comm/utilities/xmlrpcpp/include
+-I/opt/ros/kinetic/include
+-I/usr/include
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="rqt_gui_cpp"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/tim/catkin_ws/build/rqt/rqt_gui_cpp/src/rqt_gui_cpp/moc_roscpp_plugin_provider.cpp
+/home/tim/catkin_ws/src/rqt/rqt_gui_cpp/src/rqt_gui_cpp/roscpp_plugin_provider.h

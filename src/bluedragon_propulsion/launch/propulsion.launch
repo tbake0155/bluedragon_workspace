@@ -1,0 +1,5 @@
+  
+   <launch>
+     <node name="propulsion" pkg="bluedragon_propulsion" type="propulsion" />
+     <node name="near_objects" pkg="bluedragon_propulsion" type="near_objects" />
+   </launch>

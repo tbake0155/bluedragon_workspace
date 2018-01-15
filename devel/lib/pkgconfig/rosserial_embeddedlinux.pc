@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: rosserial_embeddedlinux
+Description: Description of rosserial_embeddedlinux
+Version: 0.7.4
+Cflags: 
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: 

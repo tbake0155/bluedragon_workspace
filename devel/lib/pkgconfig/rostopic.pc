@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: rostopic
+Description: Description of rostopic
+Version: 1.12.6
+Cflags: 
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: 

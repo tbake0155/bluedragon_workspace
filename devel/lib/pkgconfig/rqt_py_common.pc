@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: rqt_py_common
+Description: Description of rqt_py_common
+Version: 0.4.3
+Cflags: -I/home/tim/catkin_ws/devel/include
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: 

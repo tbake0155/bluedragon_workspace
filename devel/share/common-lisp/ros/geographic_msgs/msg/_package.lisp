@@ -1,0 +1,27 @@
+(cl:defpackage geographic_msgs-msg
+  (:use )
+  (:export
+   "<BOUNDINGBOX>"
+   "BOUNDINGBOX"
+   "<GEOPOINT>"
+   "GEOPOINT"
+   "<GEOPOSE>"
+   "GEOPOSE"
+   "<GEOGRAPHICMAP>"
+   "GEOGRAPHICMAP"
+   "<GEOGRAPHICMAPCHANGES>"
+   "GEOGRAPHICMAPCHANGES"
+   "<KEYVALUE>"
+   "KEYVALUE"
+   "<MAPFEATURE>"
+   "MAPFEATURE"
+   "<ROUTENETWORK>"
+   "ROUTENETWORK"
+   "<ROUTEPATH>"
+   "ROUTEPATH"
+   "<ROUTESEGMENT>"
+   "ROUTESEGMENT"
+   "<WAYPOINT>"
+   "WAYPOINT"
+  ))
+

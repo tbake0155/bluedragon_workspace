@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: uuid_msgs
+Description: Description of uuid_msgs
+Version: 1.0.5
+Cflags: -I/home/tim/catkin_ws/devel/include
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: message_runtime std_msgs

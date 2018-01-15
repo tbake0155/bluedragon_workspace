@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: rosserial_arduino
+Description: Description of rosserial_arduino
+Version: 0.7.4
+Cflags: -I/home/tim/catkin_ws/install/include
+Libs: -L/home/tim/catkin_ws/install/lib 
+Requires: message_runtime

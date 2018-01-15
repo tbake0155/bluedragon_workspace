@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "geographic_msgs")
+set(geographic_msgs_MAINTAINER "Jack O'Quin <jack.oquin@gmail.com>")
+set(geographic_msgs_DEPRECATED "")
+set(geographic_msgs_VERSION "0.4.0")
+set(geographic_msgs_BUILD_DEPENDS "message_generation" "geometry_msgs" "std_msgs" "uuid_msgs")
+set(geographic_msgs_RUN_DEPENDS "message_runtime" "geometry_msgs" "std_msgs" "uuid_msgs")
+set(geographic_msgs_BUILDTOOL_DEPENDS "catkin")

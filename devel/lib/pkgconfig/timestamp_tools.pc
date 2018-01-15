@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: timestamp_tools
+Description: Description of timestamp_tools
+Version: 1.6.8
+Cflags: -I/home/tim/catkin_ws/src/driver_common/timestamp_tools/include
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: roslib roscpp

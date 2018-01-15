@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: rqt_logger_level
+Description: Description of rqt_logger_level
+Version: 0.4.3
+Cflags: 
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: 

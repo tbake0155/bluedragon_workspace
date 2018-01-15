@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: bluedragon_description
+Description: Description of bluedragon_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: 

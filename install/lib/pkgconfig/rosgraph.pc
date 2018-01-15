@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: rosgraph
+Description: Description of rosgraph
+Version: 1.12.6
+Cflags: 
+Libs: -L/home/tim/catkin_ws/install/lib 
+Requires: 

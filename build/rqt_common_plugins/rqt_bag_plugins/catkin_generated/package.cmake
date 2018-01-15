@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rqt_bag_plugins")
+set(rqt_bag_plugins_MAINTAINER "Aaron Blasdel <ablasdel@gmail.com>, Austin Hendrix <namniart@gmail.com>")
+set(rqt_bag_plugins_DEPRECATED "")
+set(rqt_bag_plugins_VERSION "0.4.3")
+set(rqt_bag_plugins_BUILD_DEPENDS )
+set(rqt_bag_plugins_RUN_DEPENDS "geometry_msgs" "python-cairo" "python-imaging" "rosbag" "roslib" "rospy" "rqt_bag" "rqt_gui" "rqt_gui_py" "rqt_plot" "sensor_msgs" "std_msgs")
+set(rqt_bag_plugins_BUILDTOOL_DEPENDS "catkin")

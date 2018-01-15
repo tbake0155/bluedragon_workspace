@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rqt_common_plugins")
+set(rqt_common_plugins_MAINTAINER "Aaron Blasdel <ablasdel@gmail.com>")
+set(rqt_common_plugins_DEPRECATED "")
+set(rqt_common_plugins_VERSION "0.4.3")
+set(rqt_common_plugins_BUILD_DEPENDS )
+set(rqt_common_plugins_RUN_DEPENDS "rqt_action" "rqt_bag" "rqt_bag_plugins" "rqt_console" "rqt_dep" "rqt_graph" "rqt_image_view" "rqt_launch" "rqt_logger_level" "rqt_msg" "rqt_plot" "rqt_publisher" "rqt_py_common" "rqt_py_console" "rqt_reconfigure" "rqt_service_caller" "rqt_shell" "rqt_srv" "rqt_top" "rqt_topic" "rqt_web")
+set(rqt_common_plugins_BUILDTOOL_DEPENDS "catkin")

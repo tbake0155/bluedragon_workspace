@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: test_rosmaster
+Description: Description of test_rosmaster
+Version: 1.12.6
+Cflags: -I/home/tim/catkin_ws/devel/include
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: 

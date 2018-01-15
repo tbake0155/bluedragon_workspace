@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "unique_id")
+set(unique_id_MAINTAINER "Jack O'Quin <jack.oquin@gmail.com>")
+set(unique_id_DEPRECATED "")
+set(unique_id_VERSION "1.0.5")
+set(unique_id_BUILD_DEPENDS "roscpp" "rospy" "uuid_msgs")
+set(unique_id_RUN_DEPENDS "roscpp" "rospy" "uuid_msgs")
+set(unique_id_BUILDTOOL_DEPENDS "catkin")

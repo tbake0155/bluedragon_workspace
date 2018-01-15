@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: geodesy
+Version: 0.4.0
+Summary: Python and C++ interfaces for manipulating geodetic coordinates.
+Home-page: http://wiki.ros.org/geodesy
+Author: Jack O'Quin
+Author-email: jack.oquin@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

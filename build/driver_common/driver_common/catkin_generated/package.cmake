@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "driver_common")
+set(driver_common_MAINTAINER "Chad Rockey <chadrockey@gmail.com>")
+set(driver_common_DEPRECATED "")
+set(driver_common_VERSION "1.6.8")
+set(driver_common_BUILD_DEPENDS )
+set(driver_common_RUN_DEPENDS "driver_base" "timestamp_tools")
+set(driver_common_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tim/catkin_ws/src/bluedragon_propulsion/include/bluedragon_propulsion/coordinates.h
+
+/home/tim/catkin_ws/src/bluedragon_propulsion/src/coordinates.cpp
+bluedragon_propulsion/coordinates.h
+-
+math.h
+-
+

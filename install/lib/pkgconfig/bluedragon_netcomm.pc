@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/install
+
+Name: bluedragon_netcomm
+Description: Description of bluedragon_netcomm
+Version: 1.0.0
+Cflags: -I/home/tim/catkin_ws/install/include
+Libs: -L/home/tim/catkin_ws/install/lib -lbluedragon_netcomm
+Requires: message_generation roscpp rospy std_msgs message_runtime nav_msgs tf

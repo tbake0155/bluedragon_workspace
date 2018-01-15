@@ -1,0 +1,8 @@
+set(_CATKIN_CURRENT_PACKAGE "rqt_console")
+set(rqt_console_VERSION "0.4.3")
+set(rqt_console_MAINTAINER "Aaron Blasdel <ablasdel@gmail.com>")
+set(rqt_console_BUILD_DEPENDS )
+set(rqt_console_DEPRECATED "")
+set(rqt_console_RUN_DEPENDS "python-rospkg" "python_qt_binding" "roslib" "rospy" "rqt_gui" "rqt_gui_py" "rqt_logger_level")
+set(rqt_console_RUN_DEPENDS_python_qt_binding_VERSION_GTE "0.2.19")
+set(rqt_console_BUILDTOOL_DEPENDS "catkin")

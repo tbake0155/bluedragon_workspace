@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: test_roslaunch
+Description: Description of test_roslaunch
+Version: 1.12.6
+Cflags: 
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/tim/catkin_ws/devel
+
+Name: ublox_serialization
+Description: Description of ublox_serialization
+Version: 0.0.0
+Cflags: -I/home/tim/catkin_ws/src/ublox/ublox_serialization/include
+Libs: -L/home/tim/catkin_ws/devel/lib 
+Requires: roscpp roscpp_serialization

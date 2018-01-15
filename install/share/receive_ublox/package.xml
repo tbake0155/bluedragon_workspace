@@ -1,0 +1,22 @@
+<package>
+  <name>receive_ublox</name>
+  <version>0.0.1</version>
+  <description>ROS driver for U-blox GPS receivers</description>
+  <maintainer email="zhangji@cmu.edu">Ji Zhang</maintainer>
+  <url>http://wiki.ros.org/receive_ublox</url>
+  <license>BSD</license>
+
+  <author>Ji Zhang</author>
+  <author>Wenfan Shi</author>
+  <author>Ben Grocholsky</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+</package>

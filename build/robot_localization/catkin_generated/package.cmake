@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "robot_localization")
+set(robot_localization_MAINTAINER "Tom Moore <ayrton04@gmail.com>")
+set(robot_localization_DEPRECATED "")
+set(robot_localization_VERSION "2.3.1")
+set(robot_localization_BUILD_DEPENDS "message_generation" "python-catkin-pkg" "roslint" "cmake_modules" "diagnostic_msgs" "diagnostic_updater" "eigen" "geographic_msgs" "geometry_msgs" "message_filters" "nav_msgs" "roscpp" "sensor_msgs" "std_msgs" "tf2" "tf2_geometry_msgs" "tf2_ros")
+set(robot_localization_RUN_DEPENDS "message_runtime" "cmake_modules" "diagnostic_msgs" "diagnostic_updater" "eigen" "geographic_msgs" "geometry_msgs" "message_filters" "nav_msgs" "roscpp" "sensor_msgs" "std_msgs" "tf2" "tf2_geometry_msgs" "tf2_ros")
+set(robot_localization_BUILDTOOL_DEPENDS "catkin")
